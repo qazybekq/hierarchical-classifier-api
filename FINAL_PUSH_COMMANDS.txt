@@ -1,0 +1,62 @@
+╔═══════════════════════════════════════════════════════════════════════╗
+║           FINAL STEP: Push Your Code to GitHub                       ║
+╚═══════════════════════════════════════════════════════════════════════╝
+
+Copy and paste these commands in your terminal:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+STEP 1: Navigate to your project
+---------------------------------
+cd /Users/kazybek.kassym/Desktop/DAF/Прокуратура/project00
+
+
+STEP 2: Add GitHub remote
+--------------------------
+Replace YOUR_USERNAME with your actual GitHub username:
+
+git remote add origin https://github.com/YOUR_USERNAME/hierarchical-classifier-api.git
+
+
+STEP 3: Push to GitHub
+-----------------------
+git branch -M main
+git push -u origin main
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+EXAMPLE (if your username is "john-doe"):
+------------------------------------------
+cd /Users/kazybek.kassym/Desktop/DAF/Прокуратура/project00
+git remote add origin https://github.com/john-doe/hierarchical-classifier-api.git
+git branch -M main
+git push -u origin main
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+AUTHENTICATION:
+---------------
+When prompted for credentials:
+- Username: [Your GitHub username]
+- Password: [Your Personal Access Token]
+
+Don't have a token? Generate one at:
+https://github.com/settings/tokens
+(Click "Generate new token (classic)" → Select "repo" scope → Generate)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+AFTER PUSHING:
+--------------
+✅ Your code will be on GitHub
+✅ Others can clone and run with:
+   
+   git clone https://github.com/YOUR_USERNAME/hierarchical-classifier-api.git
+   cd hierarchical-classifier-api
+   docker compose up -d
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+THAT'S IT! Your ML microservice is deployed! 🎉
+
