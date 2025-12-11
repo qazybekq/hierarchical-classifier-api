@@ -1,0 +1,6 @@
+{
+  "val_top1_acc": 0.5,
+  "val_top3_acc": 0.8359375,
+  "test_top1_acc": 0.52734375,
+  "test_top3_acc": 0.8203125
+}

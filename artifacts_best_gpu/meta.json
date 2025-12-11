@@ -1,0 +1,6 @@
+{
+  "st_model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+  "device": "cpu",
+  "min_subissue_count": 3,
+  "top_keep_per_issue": 5
+}
