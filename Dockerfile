@@ -36,5 +36,8 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
     CMD python -c "import requests; requests.get('http://localhost:8001/health', timeout=5)"
 
 # Run with gunicorn for production
-CMD ["gunicorn", "-w", "2", "-b", "0.0.0.0:8001", "--timeout", "120", "hier_flask_api:app"]
+# --preload-app loads the app before forking workers (fixes pickle/joblib issues)
+CMD ["gunicorn", "-w", "2", "-b", "0.0.0.0:8001", "--timeout", "120", "--preload-app", "hier_flask_api:app"]
+
+
 
