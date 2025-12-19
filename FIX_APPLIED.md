@@ -153,3 +153,4 @@ Commit: `56d1433` - "Fix joblib unpickle error: add --preload-app flag to Gunico
 **Проблема:** KeyError: 118 при загрузке joblib моделей  
 **Решение:** Добавлен флаг --preload-app в Gunicorn
 
+
